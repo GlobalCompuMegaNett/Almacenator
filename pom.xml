@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>GlobalCompuMegaNett</groupId>
   <artifactId>Almacenator</artifactId>
-  <version>0.6</version>
+  <version>0.7</version>
   <name>Almacenator</name>
   <description>Gestor de Almacenes</description>
 </project>
