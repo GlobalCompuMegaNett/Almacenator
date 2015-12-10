@@ -4,7 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-import iteracion6.persistencia.Agente;
+import iteracion2.persistencia.Agente;
+import iteracion2.dominio.*;
 
 
 public class ClienteDaoModificar {

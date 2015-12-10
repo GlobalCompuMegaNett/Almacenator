@@ -11,9 +11,10 @@ import java.awt.GridBagConstraints;
 import javax.swing.JComboBox;
 import java.awt.Insets;
 import javax.swing.JTextField;
-
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.awt.event.ActionEvent;
 
 public class Almacenar_Interfaz {
@@ -21,7 +22,7 @@ public class Almacenar_Interfaz {
 	private JFrame frame;
 	private JPanel panel;
 	private JLabel lblSeleccionarCliente;
-	private JComboBox comboBox;
+	private JComboBox<Object> comboBox;
 	private JLabel lblPedido;
 	private JLabel lblCocacola;
 	private JLabel lblPepsi;
@@ -86,8 +87,9 @@ public class Almacenar_Interfaz {
 				panel.add(lblSeleccionarCliente, gbc_lblSeleccionarCliente);
 			}
 			{
-				comboBox = new JComboBox();
+				comboBox = new JComboBox<Object>();
 				GridBagConstraints gbc_comboBox = new GridBagConstraints();
+				comboBox.setModel(new DefaultComboBoxModel<Object>(ListadeClientes()));
 				gbc_comboBox.gridwidth = 2;
 				gbc_comboBox.insets = new Insets(0, 0, 5, 5);
 				gbc_comboBox.fill = GridBagConstraints.HORIZONTAL;
@@ -246,5 +248,17 @@ public class Almacenar_Interfaz {
 			}
 			
 		}
+	
+	public String[] ListadeClientes(){
+		File folder = new File("src/Clientes/");
+		File[] listOfFiles = folder.listFiles();
+	    String cli []=new String[listOfFiles.length];
+		    for (int i = 0; i < listOfFiles.length; i++) {
+		      if (listOfFiles[i].isFile()) {
+			    cli [i]=(String) listOfFiles[i].getName();
+		      }
+		    }
+		    return cli;
+	}
 	
 }

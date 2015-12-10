@@ -123,7 +123,7 @@ public class Borrar_Interfaz {
  }
 	
 	public String[] ListadeClientes(){
-		File folder = new File("Clientes/");
+		File folder = new File("src/Clientes/");
 		File[] listOfFiles = folder.listFiles();
 	    String cli []=new String[listOfFiles.length];
 		    for (int i = 0; i < listOfFiles.length; i++) {
@@ -135,4 +135,5 @@ public class Borrar_Interfaz {
 	}
 	
 }
+
 

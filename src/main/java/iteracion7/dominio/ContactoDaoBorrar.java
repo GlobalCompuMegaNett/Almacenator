@@ -2,7 +2,7 @@ package iteracion7.dominio;
 
 import java.io.IOException;
 
-import iteracion7.persistencia.Agente;
+import iteracion2.persistencia.Agente;
 
 public class ContactoDaoBorrar {
 	
@@ -15,3 +15,4 @@ public class ContactoDaoBorrar {
 		}
 	}
 }
+

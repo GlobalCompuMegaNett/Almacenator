@@ -3,8 +3,8 @@ import java.util.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import iteracion5.dominio.Pedido;
-import iteracion5.persistencia.Agente;
+import iteracion2.dominio.*;
+import iteracion2.persistencia.Agente;
 
 
 public class FacturaDao {
@@ -37,7 +37,7 @@ public class FacturaDao {
 			e.printStackTrace();
 		}
 		try {
-			Agente.guardarCliente(c, nombre);
+			Agente.AnadirCliente(c, nombre);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

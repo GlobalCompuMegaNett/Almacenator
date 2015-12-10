@@ -9,7 +9,10 @@ import java.awt.GridBagLayout;
 import javax.swing.JComboBox;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+import java.io.File;
+
 import javax.swing.JTextArea;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 
 public class GenerarPedido_Interfaz {
@@ -62,8 +65,9 @@ public class GenerarPedido_Interfaz {
 			gbl_panel.rowWeights = new double[]{0.0, 0.0, 1.0, 0.0, 0.0, Double.MIN_VALUE};
 			panel.setLayout(gbl_panel);
 			{
-				cbClientes = new JComboBox();
+				cbClientes = new JComboBox<Object>();
 				GridBagConstraints gbc_cbClientes = new GridBagConstraints();
+				cbClientes.setModel(new DefaultComboBoxModel<Object>(ListadeClientes()));
 				gbc_cbClientes.insets = new Insets(0, 0, 5, 5);
 				gbc_cbClientes.fill = GridBagConstraints.HORIZONTAL;
 				gbc_cbClientes.gridx = 1;
@@ -109,4 +113,33 @@ public class GenerarPedido_Interfaz {
 		}
 	}
 
+	
+	
+	public String[] ListadeClientes(){
+		File folder = new File("src/Clientes/");
+		File[] listOfFiles = folder.listFiles();
+	    String cli []=new String[listOfFiles.length];
+		    for (int i = 0; i < listOfFiles.length; i++) {
+		      if (listOfFiles[i].isFile()) {
+			    cli [i]=(String) listOfFiles[i].getName();
+		      }
+		    }
+		    return cli;
+	}
+	
+	
+	public String[] ListadePedidos(){
+		File folder = new File("src/Clientes/");
+		File[] listOfFiles = folder.listFiles();
+	    String cli []=new String[listOfFiles.length];
+		    for (int i = 0; i < listOfFiles.length; i++) {
+		      if (listOfFiles[i].isFile()) {
+			    cli [i]=(String) listOfFiles[i].getName();
+		      }
+		    }
+		    return cli;
+	}
+	
+	
 }
+

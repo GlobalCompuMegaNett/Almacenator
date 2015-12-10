@@ -1,9 +1,11 @@
 package iteracion4.dominio;
+
 import java.util.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import iteracion4.persistencia.Agente;
+import iteracion2.persistencia.Agente;
+import iteracion2.dominio.*;
 
 
 
@@ -28,7 +30,7 @@ public class PedidoDao {
 			e.printStackTrace();
 		}
 		try {
-			Agente.guardarCliente(c, nombre);
+			Agente.AnadirCliente(c, nombre);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
