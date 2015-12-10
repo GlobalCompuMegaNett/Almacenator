@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 public class Agente{
 	private static ObjectInputStream lectorArchivo;
 	public static Object BuscarCliente(String nombre) throws ClassNotFoundException{
-		File fichero=new File ("C:\\Users\\Kike\\workspace\\Almacenator\\Clientes\\"+nombre);
+		File fichero=new File ("src/Clientes"+nombre);
 		System.out.println(nombre);
 		Object c=null;
 			if(lectorArchivo==null)
