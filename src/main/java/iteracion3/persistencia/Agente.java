@@ -8,7 +8,7 @@ import java.io.ObjectInputStream;
 
 public class Agente{
 	private static ObjectInputStream lectorArchivo;
-	public static Object BuscarCliente(String nombre){
+	public static Object BuscarCliente(String nombre) throws ClassNotFoundException{
 		File fichero=new File ("C:\\Users\\Kike\\workspace\\Almacenator\\Clientes\\"+nombre);
 		System.out.println(nombre);
 		Object c=null;
@@ -22,7 +22,7 @@ public class Agente{
         	
 				try {
 					c =   lectorArchivo.readObject();
-				} catch (ClassNotFoundException | IOException e) {
+				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}

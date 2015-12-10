@@ -8,7 +8,7 @@ import iteracion3.persistencia.Agente;
 public class ClienteDaoConsultar {
 
 	
-	public static String BuscarCliente(String nombre) throws IOException {
+	public static String BuscarCliente(String nombre) throws IOException, ClassNotFoundException {
 		Cliente c=null;
 		Object o=null;
 		o=Agente.BuscarCliente(nombre);

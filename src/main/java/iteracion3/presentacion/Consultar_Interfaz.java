@@ -122,6 +122,9 @@ public class Consultar_Interfaz {
 						} catch (IOException e1) {
 							// TODO Auto-generated catch block
 							System.out.println("no tira");						
+						} catch (ClassNotFoundException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
 						}
 						
 						
