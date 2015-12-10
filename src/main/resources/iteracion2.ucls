@@ -1,69 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="iteracion3.dominio.ClienteDaoConsultar" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/dominio/ClienteDaoConsultar.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="113" y="148"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="iteracion3.dominio.Pedido" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/dominio/Pedido.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="530" y="638"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="iteracion3.presentacion.Consultar_Interfaz" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/presentacion/Consultar_Interfaz.java" binary="false" 
+  <class id="1" language="java" name="iteracion2.presentacion.Anadir_Interfaz.GuardarClienteActionListener" 
+    project="Almacenator" file="/Almacenator/src/main/java/iteracion2/presentacion/Anadir_Interfaz.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="324" y="247"/>    
+    <position height="-1" width="-1" x="670" y="424"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="iteracion3.persistencia.Agente" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/persistencia/Agente.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="833" y="157"/>    
+  <class id="2" language="java" name="iteracion2.persistencia.Agente" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/persistencia/Agente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="104" y="99"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="iteracion3.dominio.Cliente" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/dominio/Cliente.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="578" y="283"/>    
+  <class id="3" language="java" name="iteracion2.dominio.GestorAnadirCliente" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/dominio/GestorAnadirCliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="123" y="258"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="iteracion3.dominio.GestorConsultar" project="Almacenator" 
-    file="/Almacenator/src/main/java/iteracion3/dominio/GestorConsultar.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1046" y="148"/>    
+  <class id="4" language="java" name="iteracion2.dominio.Cliente" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/dominio/Cliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="427" y="191"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="7">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="8" name="pedidos"/>      
-      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
+  <class id="5" language="java" name="iteracion2.dominio.Pedido" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/dominio/Pedido.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="117" y="448"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="iteracion2.presentacion.Anadir_Interfaz" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/presentacion/Anadir_Interfaz.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="672" y="170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="iteracion2.dominio.AnadirCliente" project="Almacenator" 
+    file="/Almacenator/src/main/java/iteracion2/dominio/AnadirCliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1073" y="72"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="8">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="9" name="pedidos"/>      
+      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <nesting id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

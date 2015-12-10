@@ -4,7 +4,7 @@
   <class id="1" language="java" name="iteracion1.presentacion.Login_Interfaz.AutenticarActionPerformed" 
     project="Almacenator" file="/Almacenator/src/main/java/iteracion1/presentacion/Login_Interfaz.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="194" x="493" y="444"/>    
+    <position height="-1" width="-1" x="169" y="446"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,7 +13,7 @@
   </class>  
   <class id="2" language="java" name="iteracion1.presentacion.Login_Interfaz" project="Almacenator" 
     file="/Almacenator/src/main/java/iteracion1/presentacion/Login_Interfaz.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="189" x="493" y="89"/>    
+    <position height="-1" width="-1" x="166" y="199"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
